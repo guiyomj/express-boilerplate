@@ -12,6 +12,16 @@ __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
 
+/***/ }),
+
+/***/ "./frontend/images/hero-img.png":
+/*!**************************************!*\
+  !*** ./frontend/images/hero-img.png ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "429658c5061fbef8e6dc.png";
+
 /***/ })
 
 /******/ 	});
@@ -52,6 +62,11 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		__webpack_require__.p = "/public";
+/******/ 	})();
+/******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
@@ -61,6 +76,8 @@ var __webpack_exports__ = {};
   \******************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _css_style_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/style.sass */ "./frontend/css/style.sass");
+/* harmony import */ var _images_hero_img_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../images/hero-img.png */ "./frontend/images/hero-img.png");
+
 
 })();
 
