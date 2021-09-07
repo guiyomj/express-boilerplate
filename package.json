@@ -1,17 +1,40 @@
 {
   "name": "express-boilerplate",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
+  "main": "server.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "build": "webpack -w",
+    "start": "webpack -w --mode=development && node ./server.js",
+    "dev": "node ./server.js && webpack --mode=development"
   },
   "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "express": "~4.16.1",
-    "morgan": "~1.9.1",
+    "debug": "^4.3.2",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
     "mysql": "^2.18.1",
-    "node-sass-middleware": "0.11.0",
-    "sequelize": "^6.6.5"
+    "node-sass-middleware": "^0.11.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.5",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/preset-env": "^7.15.4",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.2.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.24.0",
+    "mini-css-extract-plugin": "^2.2.2",
+    "html-webpack-plugin": "^5.3.2",
+    "node-sass": "^6.0.1",
+    "nodemon": "2.0.7",
+    "sass": "^1.39.0",
+    "sass-loader": "^12.1.0",
+    "webpack": "^5.52.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-middleware": "^5.0.0",
+    "webpack-dev-server": "^4.1.0",
+    "webpack-hot-middleware": "^2.25.0"
   }
 }

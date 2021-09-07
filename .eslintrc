@@ -1,0 +1,17 @@
+{
+    "env": {
+      "node": true,
+      "browser": true,
+      "es6": true
+    },
+    "extends": ["eslint:recommended"],
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "rules": {
+      "comma-dangle": 0,
+      "max-len": ["error", {"code": 120, "ignoreComments": true, "ignoreUrls": true, "ignoreStrings": true}],
+      "no-unused-vars": ["error", { "argsIgnorePattern": "next" }]
+    }
+}

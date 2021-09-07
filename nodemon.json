@@ -1,0 +1,4 @@
+{
+    "ignore": ["webpack.config.js", "frontend/*", "assets/*"],
+    "exec": "babel-node ./server.js"
+}

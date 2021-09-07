@@ -1,0 +1,1 @@
+{"version":3,"file":"css/style.css","mappings":";;;AAAA;EACE;EACA;AACF;;AACA;EACE;AAEF,C","sources":["webpack://express-boilerplate/./frontend/css/style.sass"],"sourcesContent":["body\n  padding: 50px\n  font: 14px \"Lucida Grande\", Helvetica, Arial, sans-serif\n\na\n  color: #00B7FF\n"],"names":[],"sourceRoot":""}
