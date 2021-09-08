@@ -1,4 +1,0 @@
-{
-    "ignore": ["webpack.config.js", "frontend/*"],
-    "exec": "babel-node ./server.js"
-}

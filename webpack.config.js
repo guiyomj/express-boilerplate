@@ -38,19 +38,12 @@ module.exports = {
               },
           },
           {
-              test: /\.(png|svg|jpg|jpeg|gif)$/,
-              include: path.join(__dirname, `${BASE_URL}/images`),
-              use: {
-                loader: 'file-loader',
-                options: {
-                  outputPath: 'images',
-                  name: '[name].[ext]?[hash]',
-                }
-              }
-          },
-          {
               test: /\.(sa|sc|c)ss$/,
               use: [miniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+          },
+          {
+              test: /\.(png|svg|jpg|jpeg|gif)$/,
+              type: 'asset/resource'
           },
         ],
     },

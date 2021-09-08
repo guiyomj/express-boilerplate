@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "build": "webpack -w",
-    "start": "concurrently \"webpack -w\" \"nodemon\"",
+    "start": "concurrently \"webpack -w\" \"nodemon ./server.js\"",
     "dev": "webpack-dev-server --hot"
   },
   "dependencies": {
