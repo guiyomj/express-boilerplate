@@ -1,2 +1,2 @@
 import "../css/style.sass"
-import TestImg from "../images/hero-img.png"
+import TestImg from "../images/ic_person.svg"

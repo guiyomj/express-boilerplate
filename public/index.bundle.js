@@ -2,6 +2,20 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./frontend/images/ic_person.svg":
+/*!***************************************!*\
+  !*** ./frontend/images/ic_person.svg ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "/images/ic_person.svg?960863fc45d110b6f9ab84d095703175");
+
+/***/ }),
+
 /***/ "./frontend/css/style.sass":
 /*!*********************************!*\
   !*** ./frontend/css/style.sass ***!
@@ -11,16 +25,6 @@
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
-
-/***/ }),
-
-/***/ "./frontend/images/hero-img.png":
-/*!**************************************!*\
-  !*** ./frontend/images/hero-img.png ***!
-  \**************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "429658c5061fbef8e6dc.png";
 
 /***/ })
 
@@ -51,6 +55,23 @@ module.exports = __webpack_require__.p + "429658c5061fbef8e6dc.png";
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -64,7 +85,7 @@ module.exports = __webpack_require__.p + "429658c5061fbef8e6dc.png";
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "/public";
+/******/ 		__webpack_require__.p = "/";
 /******/ 	})();
 /******/ 	
 /************************************************************************/
@@ -76,7 +97,7 @@ var __webpack_exports__ = {};
   \******************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _css_style_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/style.sass */ "./frontend/css/style.sass");
-/* harmony import */ var _images_hero_img_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../images/hero-img.png */ "./frontend/images/hero-img.png");
+/* harmony import */ var _images_ic_person_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../images/ic_person.svg */ "./frontend/images/ic_person.svg");
 
 
 })();
