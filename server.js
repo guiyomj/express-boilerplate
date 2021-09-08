@@ -12,14 +12,12 @@ const webpackConfig = require('./webpack.config.js')
 const compiler = webpack(webpackConfig)
 
 app.use(logger('dev'))
-app.use(express.json())
-app.use(express.urlencoded({ extended: false }))
-app.use("/public", express.static("public"))
-app.use(express.static(path.join(__dirname, './public')))
-
+app.use(express.static(path.join(__dirname, 'public')))
 app.use('/', indexRouter)
 
-app.use(webpackDevMiddleware(compiler))
+app.use(webpackDevMiddleware(compiler, {
+    publicPath: webpackConfig.output.publicPath,
+}))
 
 app.listen(port, () => {
     console.log(`Server start at localhost:${port}`)

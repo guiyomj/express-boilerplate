@@ -12,7 +12,7 @@ module.exports = {
         filename: 'index.bundle.js', // bundle 될 파일 이름
         path: path.resolve(__dirname, 'public'),
         clean: true,
-        publicPath: '/' //웹팩 미들웨어 장소
+        publicPath: '/public/' //웹팩 미들웨어 장소
     },
     plugins: [
       new HtmlWebpackPlugin({
@@ -25,42 +25,33 @@ module.exports = {
     ],
     module: {
         rules: [
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                      presets: [
-                          ['@babel/preset-env'],
-                      ],
-                    },
-                },
-            },
-            {
-                test: /\.(sa|sc|c)ss$/,
-                use: [miniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
-            },
-            {
-                test: /\.(png|svg|jpg|jpeg|gif)$/,
-                use: {
-                  loader: 'file-loader',
+          {
+              test: /\.js$/,
+              exclude: /node_modules/,
+              use: {
+                  loader: 'babel-loader',
                   options: {
-                    outputPath: '/images',
-                    name: '[name].[ext]?[hash]',
-                  }
+                    presets: [
+                        ['@babel/preset-env'],
+                    ],
+                  },
+              },
+          },
+          {
+              test: /\.(png|svg|jpg|jpeg|gif)$/,
+              include: path.join(__dirname, `${BASE_URL}/images`),
+              use: {
+                loader: 'file-loader',
+                options: {
+                  outputPath: 'images',
+                  name: '[name].[ext]?[hash]',
                 }
-            },
-            {
-                test: /\.(woff|woff2|eot|ttf|otf)$/,
-                use: {
-                  loader: 'file-loader',
-                  options: {
-                    outputPath: '/fonts',
-                    name: '[name].[ext]?[hash]',
-                  }
-                }
-            }
+              }
+          },
+          {
+              test: /\.(sa|sc|c)ss$/,
+              use: [miniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+          },
         ],
     },
 }

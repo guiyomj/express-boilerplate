@@ -12,7 +12,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "/images/ic_person.svg?960863fc45d110b6f9ab84d095703175");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "images/ic_person.svg?960863fc45d110b6f9ab84d095703175");
 
 /***/ }),
 
@@ -85,7 +85,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "/";
+/******/ 		__webpack_require__.p = "/public/";
 /******/ 	})();
 /******/ 	
 /************************************************************************/
@@ -100,6 +100,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _images_ic_person_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../images/ic_person.svg */ "./frontend/images/ic_person.svg");
 
 
+document.querySelector('#test').src = _images_ic_person_svg__WEBPACK_IMPORTED_MODULE_1__["default"];
 })();
 
 /******/ })()
