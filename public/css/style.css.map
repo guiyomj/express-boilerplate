@@ -1,1 +1,0 @@
-{"version":3,"file":"css/style.css","mappings":";;;AAAA;EACE;EACA;EACA;AACF;;AACA;EACE;AAEF,C","sources":["webpack://express-boilerplate/./frontend/css/style.sass"],"sourcesContent":["body\r\n  padding: 50px\r\n  font: 14px \"Lucida Grande\", Helvetica, Arial, sans-serif\r\n  background: url(./hero-img.png)\r\n\r\na\r\n  color: #00B7FF\r\n"],"names":[],"sourceRoot":""}
