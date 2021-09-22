@@ -1,4 +1,5 @@
 const path = require('path')
+const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const miniCssExtractPlugin = require('mini-css-extract-plugin')
 
@@ -14,14 +15,16 @@ module.exports = {
         clean: true,
         publicPath: '/public/' //웹팩 미들웨어 장소
     },
+    devServer: {
+      port: 3000,
+    },
     plugins: [
       new HtmlWebpackPlugin({
         template: `${BASE_URL}/index.html`, // html webpack플러그인을 통해 html 파일도 함께 bundle
         showErrors: true, // 에러 발생시 메세지가 브라우저 화면에 노출
       }),
-      new miniCssExtractPlugin({ 
-        filename: 'css/style.css'
-      })
+      new miniCssExtractPlugin({ filename: 'css/style.css' }),
+      new webpack.HotModuleReplacementPlugin(),
     ],
     module: {
         rules: [
@@ -36,6 +39,10 @@ module.exports = {
                     ],
                   },
               },
+          },
+          {
+            test: /\.html$/,
+            use: 'html-loader'
           },
           {
               test: /\.(sa|sc|c)ss$/,
